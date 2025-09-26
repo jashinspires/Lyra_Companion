@@ -1,5 +1,4 @@
-# 🧠 Emotional Intelligent Support
-
+# 🧠 Mental Health Support Chatbot
 Empathetic, AI-powered mental health support—accessible 24/7 through a safe, privacy-first conversational experience.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -7,7 +6,7 @@ Empathetic, AI-powered mental health support—accessible 24/7 through a safe, p
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-0A81D1?style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 ## 🌟 Vision Statement
@@ -32,45 +31,18 @@ A human-centered, AI-assisted mental health companion:
 ## 🧠 AI Tools & Architecture
 - LLM Orchestration: LangChain / Instructor for safe prompting and tool use
 - Models: gpt-4o-mini or comparable; distilled local model option for privacy
-- Embeddings/RAG: Pinecone or pgvector for coping content retrieval
+- Embeddings/RAG: Pinecone for coping content retrieval
 - Safety Layer: prompt routing, content filters, crisis classifiers
 - Backend: FastAPI with background tasks and rate limiting
 - Frontend: Flutter mobile app and web client (responsive)
-- Data: PostgreSQL for user profiles, secure journal entries (encrypted at rest)
+- Data: MongoDB for user profiles, secure journal entries (encrypted at rest)
 - Telemetry: Privacy-preserving analytics (opt-in)
 
 ## 🔐 Ethics, Privacy, and Safety
 - Not a substitute for professional care; disclaimers throughout
 - Crisis protocol: detect self-harm intent, provide region-specific resources, suggest contacting trusted people; never give harmful instructions
-- Data minimization: store only what’s necessary, encryption at rest and in transit
+- Data minimization: store only what's necessary, encryption at rest and in transit
 - Transparent logs for moderation; red-team tests for harmful outputs
-
-## 📅 10-Day Actionable Development Plan
-
-### Days 1–2: Foundations and Guardrails
-- Project scaffolding (FastAPI + Flutter), env management, CI setup
-- Safety policies, disclaimers, crisis detection heuristics and test cases
-- Initial prompt templates for supportive tone, boundaries, and referrals
-
-### Days 3–4: Core Conversation Engine
-- Integrate LangChain with chosen LLM and safety filters
-- Implement session context and memory (bounded, privacy-aware)
-- Add emotion classification pipeline and response modulation
-
-### Days 5–6: Coping Toolkit and RAG
-- Build coping strategies library (CBT prompts, grounding, journaling)
-- Set up embeddings + vector store for relevant, safe retrieval
-- Create journaling and mood tracking flows with simple analytics
-
-### Days 7–8: Frontend UX and Accessibility
-- Flutter UI for chat, mood inputs, exercises, and journal timeline
-- Localization support, large text, high contrast, screen reader labels
-- Offline-first drafts and seamless sync; rate-limited API calls
-
-### Days 9–10: Testing, Safety Audits, and Launch Prep
-- Unit/integration tests incl. red-team scenarios and crisis tests
-- Load testing, observability, and privacy reviews
-- Beta release checklist, feedback loop, and next-steps roadmap
 
 ## 🎯 Impact Goals
 - Reduce loneliness and anxiety spikes by offering immediate, empathetic support
@@ -84,17 +56,16 @@ A human-centered, AI-assisted mental health companion:
 - Opt-in NPS and qualitative feedback from pilot users
 
 ## 🙋‍♂️ Personal Motivation
-Mental health is close to my heart. Friends and peers often struggle silently due to stigma and access barriers. I’m building this to make compassionate support feel reachable—anytime, anywhere—while honoring safety, ethics, and human dignity.
+Mental health is close to my heart. Friends and peers often struggle silently due to stigma and access barriers. I'm building this to make compassionate support feel reachable—anytime, anywhere—while honoring safety, ethics, and human dignity.
 
-## 🔧 Tech Stack (Initial)
+## 🔧 Tech Stack
 - Frontend: Flutter (mobile + web), Riverpod/Bloc, Material 3
-- Backend: FastAPI, Uvicorn, PostgreSQL, Redis (rate limits/queues)
-- AI: OpenAI API or local LLM, LangChain, pgvector/Pinecone
+- Backend: FastAPI, Uvicorn, MongoDB, Redis (rate limits/queues)
+- AI: OpenAI API or local LLM, LangChain, Pinecone
 - Infra: Docker, GitHub Actions, Fly.io/Render (starter deploy)
 
-## 🚀 Getting Started (placeholder)
+## 🚀 Getting Started
 ```bash
-# Placeholder until code is added (post-planning phase)
 # API
 uvicorn app.main:app --reload
 
@@ -110,5 +81,4 @@ We welcome contributions from mental health professionals, designers, and develo
 - India Helpline (Kiran): 1800-599-0019
 - If you are in immediate danger, contact local emergency services.
 
----
-Disclaimers: This app does not provide medical advice. It is not a replacement for licensed therapy. If you are in crisis, please seek professional help immediately.
+**Disclaimers:** This app does not provide medical advice. It is not a replacement for licensed therapy. If you are in crisis, please seek professional help immediately.
