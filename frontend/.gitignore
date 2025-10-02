@@ -1,0 +1,13 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+ios/
+android/
+linux/
+macos/
+windows/
+web/
+.DS_Store
+.idea/
