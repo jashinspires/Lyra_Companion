@@ -21,3 +21,8 @@ final dioProvider = Provider<Dio>((ref) {
     ),
   );
 });
+
+final userIdProvider = Provider<String>((ref) {
+  final config = ref.watch(appConfigProvider);
+  return config.defaultUserId;
+});

@@ -1,4 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
 
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
 
-#Ignore vscode AI rules
-.github\instructions\codacy.instructions.md
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.lock
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Dependencies
+node_modules/
+
+# Codacy
+.codacy/
+codacy-analysis-cli-master/
+
+# VS Code AI rules
+.github/instructions/codacy.instructions.md

@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     )
     version: str = "0.1.0"
 
+    gemini_api_key: str | None = None
     openai_api_key: str | None = None
     pinecone_api_key: str | None = None
     pinecone_environment: str | None = None
